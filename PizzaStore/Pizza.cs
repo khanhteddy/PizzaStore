@@ -4,10 +4,12 @@ using System.Text;
 
 namespace PizzaStore
 {
+    public class Pizza
     {
         protected string name;
         protected string dough;
         protected string sauce;
+        protected List<string> toppings =  new List<string>();
 
         public void Prepare()
         {
@@ -20,14 +22,16 @@ namespace PizzaStore
         }
         public void Bake()
         {
+            Console.WriteLine("Baking" + name + "30 mins");
 
         }
         public void Cut()
         {
+            Console.WriteLine("Cutting" + name);
         }
         public void Box()
         {
-            Console.WriteLine("Boxing " + name);
+            Console.WriteLine("Boxing " + name+ "\n");
         }
     }
 }

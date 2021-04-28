@@ -8,7 +8,8 @@ namespace PizzaStore
         static void Main(string[] args)
         {
             var pizzaStore = new PizzaStore();
-            pizzaStore.OederPizza();
+            pizzaStore.OrderPizza("chesse");
+            pizzaStore.OrderPizza("Greek");
 
         }
     }
