@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PizzaStore.Store;
+using PizzaStore.Store.Base;
+using System;
 using System.Collections.Generic;
 
 namespace PizzaStore
@@ -7,9 +9,10 @@ namespace PizzaStore
     {
         static void Main(string[] args)
         {
-            var pizzaStore = new PizzaStore();
-            pizzaStore.OrderPizza("chesse");
-            pizzaStore.OrderPizza("Greek");
+            var HUEpizzaStore = new HUEPizzaStore();
+            HUEpizzaStore.OrderPizza("chesse");
+            var BLpizzaStore = new BLPizzaStore();
+            BLpizzaStore.OrderPizza("chesse");
 
         }
     }

@@ -4,13 +4,13 @@ using System.Text;
 
 namespace PizzaStore 
 {
-    class ChessePizza : Pizza
+    class HUEChessePizza : Pizza
     {
-        public ChessePizza()
+        public HUEChessePizza()
         {
-            name = "The best chesse pizza";
-            dough = "Verry thin dough";
-            sauce = "Verry spicy sauce";
+            name = "HUE The best chesse pizza";
+            dough = "HUE Verry thin dough";
+            sauce = "HUE Verry spicy sauce";
             toppings.Add("Black olives");
             toppings.Add("Chesse");
         }
